@@ -1,0 +1,4 @@
+[core]
+    remote = dataremote
+['remote "dataremote"']
+    url = ../S3
