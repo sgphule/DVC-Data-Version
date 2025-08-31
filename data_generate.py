@@ -10,8 +10,12 @@ data = {'Vorname': ['Jürgen', 'Danilo', 'Marcel'],
 df = pd.DataFrame(data)
 
 # Adding new row for second version of data
-new_row = {'Vorname': 'Sudarshan', 'Age': 11, 'Stadt': 'Ingolstadt'}
+new_row = {'Vorname': 'Sudarshan', 'Alter': 11, 'Stadt': 'Ingolstadt'}
 df.loc[len(df.index)] = new_row
+
+# Adding new row for third version of data
+new_row2 = {'Vorname': 'Alex', 'Alter': 19, 'Stadt': 'Bremen'}
+df.loc[len(df.index)] = new_row2
 
 data_dir = 'data'
 os.makedirs(data_dir, exist_ok=True)
