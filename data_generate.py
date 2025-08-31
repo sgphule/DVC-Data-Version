@@ -9,6 +9,10 @@ data = {'Vorname': ['Jürgen', 'Danilo', 'Marcel'],
 
 df = pd.DataFrame(data)
 
+# Adding new row for second version of data
+new_row = {'Vorname': 'Sudarshan', 'Age': 11, 'Stadt': 'Ingolstadt'}
+df.loc[len(df.index)] = new_row
+
 data_dir = 'data'
 os.makedirs(data_dir, exist_ok=True)
 file_path = os.path.join(data_dir, "info.csv")
