@@ -133,5 +133,7 @@ dvc pull
 ```bash
 cat data/info.csv
 ```
-
-
+23. Generate requirements.txt file
+```bash
+pip3 freeze > requirements.txt
+```
